@@ -1,0 +1,25 @@
+[package]
+name = "telegram_bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+teloxide = { version = "0.12.2", features = ["macros", "sqlite-storage"] }
+tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
+
+
+
+async_once = "0.2.6"
+lazy_static = "1.4.0"
+
+serde_json = "1.0.108"
+serde = "1.0.193"
+regex = "1.10.2"
+
+clap = { version = "4.4.11", features = ["derive"] }
+openssl = { version = "0.10", features = ["vendored"] }
+
+[dependencies.conception]
+path = "../conception"
